@@ -1,0 +1,389 @@
+/*
+Theme Name: Satellite Theme
+Version: 1.0
+Author: Maksym Kyrychok
+*/
+
+/* Global styles start */
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article,
+section {
+    padding: 20px 40px;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.1rem;
+    line-height: 1.8rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+li {
+    padding-left: 10px;
+}
+
+label {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+textarea {
+    margin-bottom: 15px !important;
+    padding: 10px;
+
+    resize: none;
+    border-color: #c3c3c3;
+
+    font-size: 0.9rem !important;
+}
+
+input {
+    margin-bottom: 15px !important;
+    padding: 10px;
+    border: 1px solid #c3c3c3;
+
+    font-size: 0.9rem !important;
+}
+
+blockquote {
+    border-left: 2px solid #6289bf;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 460px) {
+    blockquote {
+        margin: 0 0 40px;
+    }
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    color: #969696;
+    font-style: italic;
+}
+
+blockquote cite {
+    margin-left: calc(100% - 150px);
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: #444444;
+    background-color: #fcfcfc;
+}
+
+.body-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Global styles end */
+
+/* Header styles start */
+
+.logo {
+    display: block;
+    text-align: center;
+
+    padding: 30px 0;
+}
+
+/* Header styles end */
+
+/* Main content styles start */
+
+.wrapper {
+    margin-bottom: 50px;
+
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 22px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 22px 0 rgba(0,0,0,.1);
+}
+
+.comments-section__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.comment__avatar {
+    margin-right: 30px;
+
+    display: block;
+    width: 90px;
+    height: 90px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 460px) {
+    .comment__avatar {
+        margin-right: 20px;
+
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.comment__body {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 20px;
+}
+
+.comment__author {
+    margin: 0;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.comment__date {
+    font-size: 0.8rem;
+    color: #c3c3c3;
+}
+
+.leave-comment__title {
+    font-size: 1.5rem;
+}
+
+.form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.leave-comment__submit {
+    display: inline-block;
+    width: 240px;
+    height: 50px;
+    margin: 20px 0;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #6289bf;
+
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.leave-comment__submit:hover {
+    background-color: #000000;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 7%;
+    right: 4%;
+
+    z-index: 1000;
+
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    background-color: #6289bf;
+    background-image: url("assets/image/to-top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.to-top:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.hide {
+    display: none;
+}
+
+/* Main content styles end */
+
+
+/* Footer styles start*/
+
+footer {
+    min-height: 150px;
+    background-color: black;
+}
+
+.footer-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.dmca-wrapper {
+    text-align: center;
+}
+
+/* Footer styles end */
+
+/* 404 styles start */
+
+.main-404 {
+    min-height: 69vh;
+}
+
+.to-home-btn {
+    display: block;
+    margin: 70px auto;
+    padding: 10px 0;
+    width: 200px;
+    min-height: 50px;
+
+    background-color: #6289bf;
+    border-radius: 10px;
+
+    color: white;
+    text-align: center;
+}
+
+.to-home-btn:hover {
+    background-color: #000;
+}
+
+/* 404 styles end */
+
+/* start youtube embed style */
+
+.youtube-wrapper {
+    max-width: 680px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    -webkit-box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d( -50%, -50%, 0 );
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* end youtube embed style */
